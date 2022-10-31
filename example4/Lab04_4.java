@@ -4,18 +4,19 @@ import java.util.Scanner;
 public class Lab04_4 {
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
+	HashMap<String, String> book = new HashMap<>();
+	String key;
+	String number;
 	while(true) {
-		HashMap<String, String> book = new HashMap<>();
 		int type = sc.nextInt();
-		System.out.println(book);
 		switch(type)
 		{
 		case 0:
-			String key = sc.next();
-			String number = sc.next();
+			key = sc.next();
+			number = sc.next();
 			if(book.containsKey(key))
 			{
-				System.out.println("Already exist name");
+				System.out.println("Already exist name.");
 			}
 			else {
 				book.put(key, number);
@@ -29,14 +30,15 @@ public class Lab04_4 {
 				number = book.get(key);
 				System.out.println("Name : " + key + ", Phone number : " + number);
 			}
-			else {System.out.println("Not found.");}
+			else {
+				System.out.println("Not found.");}
 			break;
 		case 2:
 			key = sc.next();
 			number = sc.next();
 			if(book.containsKey(key)) {
 				book.put(key, number);
-				System.out.println("update");
+				System.out.println("update.");
 			}
 			else {
 				System.out.println("Not found.");
@@ -51,6 +53,9 @@ public class Lab04_4 {
 			else {System.out.println("Not found.");}
 			break;
 		case -1:
+			System.exit(0);
+			break;
+		default: 
 			System.exit(0);
 			break;
 		}

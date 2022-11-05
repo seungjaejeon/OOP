@@ -20,6 +20,7 @@ public class Lab04_3 {
 				arr[i][j] = sc.next();
 			}
 		}
+		sc.close();
 		for(int i=0; i<n; i++)
 		{
 			if(Math.containsKey(arr[i][1])) {

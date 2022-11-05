@@ -53,6 +53,7 @@ public class Lab04_4 {
 			else {System.out.println("Not found.");}
 			break;
 		case -1:
+			sc.close();
 			System.exit(0);
 			break;
 		default: 

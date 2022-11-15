@@ -1,0 +1,5 @@
+Choi 0 1
+Kim 1 0
+Jang 2 1
+Hwang 1 2
+Shin 1 1
